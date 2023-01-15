@@ -5,7 +5,7 @@ export default function BoutiquePage({}) {
             <div className="hover:rotate-[360deg] transition duration-700 hover:cursor-pointer">
                 <img className="h-52" src='./LOGOMAXI.png'/>
             </div>
-            <div className="text-center">
+            <div className="text-center px-10">
                 <p className="text-5xl text-gray-200 font-grenze mb-5">Ouverture de la boutique le 22 Février a 20H00</p>
                 <p className="text-xl text-gray-300 font-grenze">44 companions dropables avec les clés de la boutique dont 9 nouveaux companions obtenables seulement pendant cette cité</p>
                 <p className="text-xl text-gray-300 font-grenze">Tous vos cosmétiques seront conservés pour les futures évènements Miokara/MCPG</p>
