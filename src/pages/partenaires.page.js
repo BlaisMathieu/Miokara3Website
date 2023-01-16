@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet"
 
 export default function PartenairesPage({}) {
     return (
         <div className="bg-gray-500 h-fit min-h-screen w-full flex flex-col items-center gap-10 px-5">
+            <Helmet>
+                <title>{'Cité de Miokara'}</title>
+            </Helmet>
             <p className="lg:text-5xl text-4xl text-gray-200 font-grenze mb-5 mt-20">Nos partenaires</p>
             <div className="bg-gray-600 rounded-xl h-fit w-fit lg:w-[500px] md:p-10 p-5 flex flex-col items-center mb-20">
                 <img className="h-[150px]" src='./miokara.png'/>

@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet"
 
 export default function BoutiquePage({}) {
     return (
         <div className="bg-gray-500 h-screen w-full flex flex-col items-center justify-center gap-10">
+            <Helmet>
+                <title>{'Cité de Miokara'}</title>
+            </Helmet>
             <div className="hover:rotate-[360deg] transition duration-700 hover:cursor-pointer">
                 <img className="h-52" src='./LOGOMAXI.png'/>
             </div>

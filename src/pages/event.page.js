@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet"
 
 function Left({img, children}) {
     return (
         <div className="w-full flex justify-start">
-            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative my-10">
+            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative my-10 md:ml-10">
                 <div className="w-1/2 h-[350px] rounded-xl shadow-xl absolute overflow-hidden z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -31,7 +32,7 @@ function Left({img, children}) {
 function Right({img, children}) {
     return (
         <div className="w-full flex justify-end">
-            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative self-end my-10">
+            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative self-end md:mr-10 my-10">
                 <div className="w-1/2 h-[350px] rounded-xl shadow-xl absolute overflow-hidden top-0 right-0 z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -58,9 +59,13 @@ function Right({img, children}) {
     )
 }
 
+
 export default function EventPage({}) {
     return (
         <div className="w-full container mx-auto">
+            <Helmet>
+                <title>{'Cité de Miokara'}</title>
+            </Helmet>
             <div className="w-full h-full flex flex-col pt-32">
                 <Left img={'./cité.jpg'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Cité des sables</p>
@@ -86,17 +91,17 @@ export default function EventPage({}) {
                     <p className="font-grenze md:text-lg text-gray-300">{`(UHC RUN, Build battle, jump, pvp tournament, quake)`}</p>
                     <p className="font-grenze md:text-lg text-gray-300">{`(Quiz Minecraft, base la plus jolie etc)`}</p>
                 </Right>
-                <Left img={'./wall4.jpg'}>
+                <Left img={'yyy.png'}>
+                    <p className="md:text-2xl text-xl font-grenze text-gray-200">314 euros de dotations à gagner !</p>
+                    <p className="font-grenze md:text-lg text-gray-300 mt-2">Les dotations seront réparties entre les 2 classements (émeraude et fun)</p>
+                    <p className="font-grenze md:text-lg text-gray-300">140 euros de cartes cadeaux Amazon !</p>
+                    <p className="font-grenze md:text-lg text-gray-300">Des coupes d'une valeur de 15 euros pour les 3 premiers.</p>
+                </Left>
+                <Right img={'./wall4.jpg'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Les pillages</p>
                     <p className="font-grenze md:text-lg text-gray-300">Que serait une cité sans pillages ? Malgré une map faisant souvent + de 10 000 blocs de large, en raison
                     du nombreux nombre de joueurs, les pillages sont assez fréquents. Il est donc nécessaires de bien cacher sa base.</p>
                     <p className="font-grenze md:text-lg text-gray-300">Pas de soucis à vous faire, le pvp sera en 1.8</p>
-                </Left>
-                <Right img={'./wall7.jpg'}>
-                    <p className="md:text-2xl text-xl font-grenze text-gray-200">Les habitations</p>
-                    <p className="font-grenze md:text-lg text-gray-300 mt-3">+ de 100 habitations sont disponibles au spawn de la cité.</p>
-                    <p className="font-grenze md:text-lg text-gray-300">Acheter une habitation vous permettra de vous y téléporter et de ne pas faire le chemin à pied depuis votre base.
-                    Vous pourrez également y stocker des items. Seul vous et votre team auront accès a l'habitation.</p>
                 </Right>
                 <Left img={'wall.JPG'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Les commandes importantes</p>
@@ -105,18 +110,18 @@ export default function EventPage({}) {
                     <p className="font-grenze md:text-lg text-gray-300">/companions pour accéder à vos companions obtenable via la boutique</p>
                     <p className="font-grenze md:text-lg text-gray-300">/helpop pour contacter le staff</p>
                 </Left>
-                <Right img={'./e.png'}>
-                    <p className="md:text-2xl text-xl font-grenze text-gray-200">Particularité de cette cité</p>
-                    <p className="font-grenze md:text-lg text-gray-300 mt-1">Plugin inédit développé pour cette cité.</p>
-                    <p className="font-grenze md:text-lg text-gray-300">Génération automatique et aléatoire de fossiles de dinosaures sous le sol. Possibilité pour les joueurs de les détérrer et de les revendre contre des émeraudes.</p>
-                    <p className="font-grenze md:text-lg text-gray-300">Plus d'info sur <Link to='/teasing'><span className="text-orange-300 underline">la page Teasing</span></Link></p>
+                <Right img={'./wall7.jpg'}>
+                    <p className="md:text-2xl text-xl font-grenze text-gray-200">Les habitations</p>
+                    <p className="font-grenze md:text-lg text-gray-300 mt-3">+ de 100 habitations sont disponibles au spawn de la cité.</p>
+                    <p className="font-grenze md:text-lg text-gray-300">Acheter une habitation vous permettra de vous y téléporter et de ne pas faire le chemin à pied depuis votre base.
+                    Vous pourrez également y stocker des items. Seul vous et votre team auront accès a l'habitation.</p>
                 </Right>
                 <div className="mb-20">
-                    <Left img={'yyy.png'}>
-                        <p className="md:text-2xl text-xl font-grenze text-gray-200">314 euros de dotations à gagner !</p>
-                        <p className="font-grenze md:text-lg text-gray-300 mt-2">Les dotations seront réparties entre les 2 classements (émeraude et fun)</p>
-                        <p className="font-grenze md:text-lg text-gray-300">140 euros de cartes cadeaux Amazon !</p>
-                        <p className="font-grenze md:text-lg text-gray-300">Des coupes d'une valeur de 15 euros pour les 3 premiers.</p>
+                    <Left img={'./e.png'}>
+                        <p className="md:text-2xl text-xl font-grenze text-gray-200">Particularité de cette cité</p>
+                        <p className="font-grenze md:text-lg text-gray-300 mt-1">Plugin inédit développé pour cette cité.</p>
+                        <p className="font-grenze md:text-lg text-gray-300">Génération automatique et aléatoire de fossiles de dinosaures sous le sol. Possibilité pour les joueurs de les détérrer et de les revendre contre des émeraudes.</p>
+                        <p className="font-grenze md:text-lg text-gray-300">Plus d'info sur <Link to='/teasing'><span className="text-orange-300 underline">la page Teasing</span></Link></p>
                     </Left>
                 </div>
             </div>

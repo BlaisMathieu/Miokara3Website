@@ -1,5 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import { Helmet } from "react-helmet"
 
 function Carrousel({}) {
     return (
@@ -52,6 +53,9 @@ function Card({img, children}) {
 export default function TeasingPage({}) {
     return (
         <div className="w-full relative overflow-hidden min-h-screen h-full bg-black">
+            <Helmet>
+                <title>{'Cité de Miokara'}</title>
+            </Helmet>
             <div className="absolute z-10 blur h-screen w-full scale-110 opacity-70 mb-2">
                 <img className="object-cover w-full h-full" src="./teaser.png" />
             </div>

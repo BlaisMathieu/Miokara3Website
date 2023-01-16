@@ -18,7 +18,7 @@ export default function HomePage({}) {
                     <p className="animate-pulse text-[#FCB774] xl:w-[550px] md:w-[400px] w-[300px] text-center font-grenze text-2xl xl:text-4xl"><span className="xl:text-6xl text-4xl text-white">314 euros </span>de dotations à gagner dont 140 euros de carte cadeau AMAZON</p>
                 </div>
                 <Link to='/inscriptions'>
-                    <div className="hover:cursor-pointer hover:scale-105 transition-all duration-500">
+                    <div className="hover:cursor-pointer hover:scale-105 transition-all duration-500 mb-10">
                         <img className="xl:w-[500px] w-[400px]" src='./tab.png'></img>
                     </div>
                 </Link>
