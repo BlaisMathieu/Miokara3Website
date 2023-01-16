@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
+import { motion } from "framer-motion"
 
 function Left({img, children}) {
     return (
         <div className="w-full flex justify-start">
-            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative my-10 md:ml-10">
+            <motion.div 
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true }}
+             transition={{ duration: 0.5 }}
+             variants={{
+               visible: { opacity: 1, scale: 1 },
+               hidden: { opacity: 0.5, scale: 0.8 }
+             }}
+            className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative my-10 md:ml-10">
                 <div className="w-1/2 h-[350px] rounded-xl shadow-xl absolute overflow-hidden z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -13,9 +23,18 @@ function Left({img, children}) {
                         {children}
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="lg:hidden w-full h-fit flex-col my-10 px-10">
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0.5, scale: 0.8 }
+            }}
+            className="lg:hidden w-full h-fit flex-col my-10 px-10">
                 <div className="w-full h-fit rounded-t-xl shadow-xl overflow-hidden z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -24,7 +43,7 @@ function Left({img, children}) {
                         {children}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
@@ -32,7 +51,15 @@ function Left({img, children}) {
 function Right({img, children}) {
     return (
         <div className="w-full flex justify-end">
-            <div className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative self-end md:mr-10 my-10">
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0.5, scale: 0.8 }
+            }} className="hidden xl:w-3/4 w-full h-[350px] lg:flex relative self-end md:mr-10 my-10">
                 <div className="w-1/2 h-[350px] rounded-xl shadow-xl absolute overflow-hidden top-0 right-0 z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -41,9 +68,17 @@ function Right({img, children}) {
                         {children}
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="lg:hidden w-full h-fit flex-col my-10 px-10">
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0.5, scale: 0.8 }
+            }} className="lg:hidden w-full h-fit flex-col my-10 px-10">
                 <div className="w-full h-fit rounded-t-xl shadow-xl overflow-hidden z-30 border-4 border-gray-600">
                     <img className="w-[100%] h-[100%]" src={img} />
                 </div>
@@ -52,9 +87,7 @@ function Right({img, children}) {
                         {children}
                     </div>
                 </div>
-            </div>
-
-
+            </motion.div>
         </div>
     )
 }
