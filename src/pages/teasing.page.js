@@ -23,7 +23,7 @@ function Carrousel({}) {
                 <img src="./a6.png" />
             </div>
             <div>
-                <img src="./a7.png" />
+                <img src="./a10.png" />
             </div>
             <div>
                 <img src="./a8.png" />

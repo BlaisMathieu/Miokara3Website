@@ -105,7 +105,7 @@ export default function EventPage({}) {
                     <p className="font-grenze md:text-lg text-gray-300">/companions pour accéder à vos companions obtenable via la boutique</p>
                     <p className="font-grenze md:text-lg text-gray-300">/helpop pour contacter le staff</p>
                 </Left>
-                <Right img={'./wall9.jpg'}>
+                <Right img={'./e.png'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Particularité de cette cité</p>
                     <p className="font-grenze md:text-lg text-gray-300 mt-1">Plugin inédit développé pour cette cité.</p>
                     <p className="font-grenze md:text-lg text-gray-300">Génération automatique et aléatoire de fossiles de dinosaures sous le sol. Possibilité pour les joueurs de les détérrer et de les revendre contre des émeraudes.</p>
