@@ -48,7 +48,7 @@ export default function InscriptionPage({}) {
                 </motion.div>
             </div>
 
-            <div className="xl:w-1/2 w-full xl:h-screen h-[500px] flex items-start xl:mt-[120px]">
+            <div className="xl:w-1/2 w-full xl:h-screen h-[500px] flex items-start xl:mt-[120px] md:mb-0 mb-20">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfO9yLksysuJSbBnwnqtmBklJj425HAQARJquo5yZx_km1QlA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
             </div>
         </div>
