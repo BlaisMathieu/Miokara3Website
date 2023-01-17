@@ -13,6 +13,7 @@ import AssoPage from "./pages/asso.page";
 
 function Navbar({}) {
   const [actual, setActual] = useState()
+  const [open, setOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -32,9 +33,35 @@ function Navbar({}) {
             <img className="h-10" src='./mcpg+.png'/>
           </div>
         </a>
-        <div className="lg:invisible visible absolute h-full flex items-center justify-center right-[10%] hover:scale-105 transition duration-700 hover:cursor-pointer">
+        <div className="lg:invisible visible absolute h-full flex items-center justify-center right-[10%] hover:scale-105 transition duration-700 hover:cursor-pointer"
+          onClick={() => setOpen(!open)}>
             <img className="h-12" src='./menu.png'/>
+        </div>
+        {open && 
+          <div className="absolute z-50 top-[55px] w-full h-[700px] bg-gray-600 p-10 flex flex-col gap-10 items-center justify-center shadow-xl">
+            <Link to="/event" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/event' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>L'évènement</p>
+            </Link>
+            <Link to="/teasing" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/teasing' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Teasing</p>
+            </Link>
+            <Link to="/reglement" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/reglement' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Réglement</p>
+            </Link>
+            <Link to="/inscriptions" onClick={() => setOpen(false)}>
+              <p className={`text-3xl ${actual === '/inscriptions' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Inscription</p>
+            </Link>
+            <Link to="/boutique" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/boutique' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Boutique</p>
+            </Link>
+            <Link to="/partenaires" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/partenaires' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Partenaires</p>
+            </Link>
+            <Link to="/association" onClick={() => setOpen(false)}>
+              <p className={`text-2xl ${actual === '/association' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>Le Staff</p>
+            </Link>
           </div>
+        }
         <div className="lg:visible invisible w-full lg:flex items-center xl:gap-16 gap-5 justify-center">
           <Link to="/event">
             <p className={`text-xl ${actual === '/event' ? 'text-[#FCB774]' : 'text-white'} opacity-100 hover:cursor-pointer hover:text-[#FCB774]`}>L'évènement</p>
