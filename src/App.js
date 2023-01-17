@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Routes, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route, Link, useLocation, HashRouter } from "react-router-dom";
 import HomePage from './pages/home.page';
 import EventPage from './pages/event.page';
 import BoutiquePage from './pages/boutique.page';
@@ -83,7 +83,7 @@ function Layout({}) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path='/' element={<Layout/>}>
                 <Route index element={<HomePage />}/>
@@ -96,7 +96,7 @@ function App() {
                 <Route path="association" element={<AssoPage />}/>
             </Route>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );
 }
 
