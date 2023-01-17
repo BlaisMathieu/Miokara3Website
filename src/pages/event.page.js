@@ -143,7 +143,7 @@ export default function EventPage({}) {
                     <p className="font-grenze md:text-lg text-gray-300">/companions pour accéder à vos companions obtenable via la boutique</p>
                     <p className="font-grenze md:text-lg text-gray-300">/helpop pour contacter le staff</p>
                 </Left>
-                <Right img={'./wall7.jpg'}>
+                <Right img={'./wall7.JPG'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Les habitations</p>
                     <p className="font-grenze md:text-lg text-gray-300 mt-3">+ de 100 habitations sont disponibles au spawn de la cité.</p>
                     <p className="font-grenze md:text-lg text-gray-300">Acheter une habitation vous permettra de vous y téléporter et de ne pas faire le chemin à pied depuis votre base.
