@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Miokara3Website/static/css/main.1d532135.css",
-    "main.js": "/Miokara3Website/static/js/main.db3d69c9.js",
+    "main.js": "/Miokara3Website/static/js/main.ac30d9ba.js",
     "static/js/787.71e672d5.chunk.js": "/Miokara3Website/static/js/787.71e672d5.chunk.js",
     "static/media/signika.ttf": "/Miokara3Website/static/media/signika.d21bee501f5e287b69b0.ttf",
     "index.html": "/Miokara3Website/index.html",
     "main.1d532135.css.map": "/Miokara3Website/static/css/main.1d532135.css.map",
-    "main.db3d69c9.js.map": "/Miokara3Website/static/js/main.db3d69c9.js.map",
+    "main.ac30d9ba.js.map": "/Miokara3Website/static/js/main.ac30d9ba.js.map",
     "787.71e672d5.chunk.js.map": "/Miokara3Website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d532135.css",
-    "static/js/main.db3d69c9.js"
+    "static/js/main.ac30d9ba.js"
   ]
 }
