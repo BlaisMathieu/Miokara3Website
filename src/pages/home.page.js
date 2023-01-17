@@ -8,9 +8,9 @@ export default function HomePage({}) {
                 <title>{'Cité de Miokara'}</title>
             </Helmet>
             <div className="absolute z-10 blur-[3px] h-screen w-full scale-110">
-                <video className="object-cover w-full h-full" autoPlay loop muted>
+                {/* <video className="object-cover w-full h-full" autoPlay loop muted>
                     <source src="./test4.mp4" type="video/mp4"></source>
-                </video>
+                </video> */}
             </div>
             <div className="relative z-30 flex flex-col xl:flex-row items-center justify-center min-h-screen 2xl:gap-80 xl:gap-40 gap-10 lg:pb-28 mt-[55px]"> 
                 <div>
