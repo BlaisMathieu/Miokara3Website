@@ -124,7 +124,7 @@ export default function EventPage({}) {
                     <p className="font-grenze md:text-lg text-gray-300">{`(UHC RUN, Build battle, jump, pvp tournament, quake)`}</p>
                     <p className="font-grenze md:text-lg text-gray-300">{`(Quiz Minecraft, base la plus jolie etc)`}</p>
                 </Right>
-                <Left img={'yyy.png'}>
+                <Left img={'./yyy.png'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">314 euros de dotations à gagner !</p>
                     <p className="font-grenze md:text-lg text-gray-300 mt-2">Les dotations seront réparties entre les 2 classements (émeraude et fun)</p>
                     <p className="font-grenze md:text-lg text-gray-300">140 euros de cartes cadeaux Amazon !</p>
@@ -136,7 +136,7 @@ export default function EventPage({}) {
                     du nombreux nombre de joueurs, les pillages sont assez fréquents. Il est donc nécessaires de bien cacher sa base.</p>
                     <p className="font-grenze md:text-lg text-gray-300">Pas de soucis à vous faire, le pvp sera en 1.8</p>
                 </Right>
-                <Left img={'wall.JPG'}>
+                <Left img={'./wall.JPG'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Les commandes importantes</p>
                     <p className="font-grenze md:text-lg text-gray-300 mt-2">/home vous téléportera à votre habitation au spawn, si vous n'en avez pas alors la commande ne fera rien.</p>
                     <p className="font-grenze md:text-lg text-gray-300">/team bal pour connaitre le nombre d'émeraudes de votre team en banque</p>
