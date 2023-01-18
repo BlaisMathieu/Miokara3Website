@@ -30,7 +30,7 @@ function Navbar({}) {
         </Link>
         <a className="lg:visible hidden lg:flex" href='https://www.mcpg.fr/'>
           <div className="absolute h-full flex items-center justify-center right-[8%] hover:scale-105 transition duration-700 hover:cursor-pointer">
-            <img className="h-10" src='./mcpg+.png'/>
+            <img className="h-10" src='./mcpg++.png'/>
           </div>
         </a>
         <div className="lg:invisible visible absolute h-full flex items-center justify-center right-[10%] hover:scale-105 transition duration-700 hover:cursor-pointer"
