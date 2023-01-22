@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Miokara3Website/static/css/main.08567b8b.css",
-    "main.js": "/Miokara3Website/static/js/main.48516ed9.js",
+    "main.css": "/Miokara3Website/static/css/main.748fb8ce.css",
+    "main.js": "/Miokara3Website/static/js/main.f42ec658.js",
     "static/js/787.71e672d5.chunk.js": "/Miokara3Website/static/js/787.71e672d5.chunk.js",
     "static/media/signika.ttf": "/Miokara3Website/static/media/signika.d21bee501f5e287b69b0.ttf",
     "index.html": "/Miokara3Website/index.html",
-    "main.08567b8b.css.map": "/Miokara3Website/static/css/main.08567b8b.css.map",
-    "main.48516ed9.js.map": "/Miokara3Website/static/js/main.48516ed9.js.map",
+    "main.748fb8ce.css.map": "/Miokara3Website/static/css/main.748fb8ce.css.map",
+    "main.f42ec658.js.map": "/Miokara3Website/static/js/main.f42ec658.js.map",
     "787.71e672d5.chunk.js.map": "/Miokara3Website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08567b8b.css",
-    "static/js/main.48516ed9.js"
+    "static/css/main.748fb8ce.css",
+    "static/js/main.f42ec658.js"
   ]
 }
