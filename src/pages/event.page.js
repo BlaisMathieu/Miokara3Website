@@ -103,6 +103,7 @@ export default function EventPage({}) {
                 <Right img={'./minia.png'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Le trailer</p>
                     <p className="font-grenze md:text-lg text-gray-300">Va jeter un coup d'oeil au trailer de la cité, les infos principales y sont présentes.</p>
+                    <p className="font-grenze md:text-lg text-gray-300">https://www.youtube.com/watch?v=Ub9BnidHQV4</p>
                 </Right>
                 <Left img={'./cité.jpg'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Cité des sables</p>
