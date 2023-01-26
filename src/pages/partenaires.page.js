@@ -27,7 +27,7 @@ function GameEarth({}) {
         <div className="bg-gray-600 rounded-xl h-fit w-full md:p-10 p-5 flex flex-col items-center mb-20">
                 <img className="h-[150px]" src='./ge.png'/>
                 <div>
-                    <p className="md:text-4xl text-3xl text-gray-200 font-grenze mt-3">GameEarth</p>
+                    <p className="md:text-4xl text-3xl text-gray-200 font-grenze mt-3">GamEarth</p>
                     <p className="md:text-xl text-lg text-gray-300 font-grenze mt-10">GamEarth est une communauté axée sur le gaming, fondée il y a plusieurs années. Nous misons sur notre écoute et notre convivialité pour nous démarquer des autres communautés.</p>
                     <p className="md:text-xl text-lg text-gray-300 font-grenze mt-3">Notre équipe organise des événements avec des lots à la clé, pour compléter les soirées organisées par les membres. En effet, ces derniers ont la possibilité de créer leurs propres soirées, via un bot dédié, pour animer le serveur.</p>
                     <p className="md:text-xl text-lg text-gray-300 font-grenze ">Nous mettons à disposition de notre communauté des serveurs de jeux : Minecraft (Survie, Créatif, Skyblock, FTB), Rust, SCP: Secret Laboratory, Ark.</p>
