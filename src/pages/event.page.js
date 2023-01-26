@@ -100,6 +100,10 @@ export default function EventPage({}) {
                 <title>{'Cité de Miokara'}</title>
             </Helmet>
             <div className="w-full h-full flex flex-col pt-32">
+                <Right img={'./minia.png'}>
+                    <p className="md:text-2xl text-xl font-grenze text-gray-200">Le trailer</p>
+                    <p className="font-grenze md:text-lg text-gray-300">Va jeter un coup d'oeil au trailer de la cité, les infos principales y sont présentes.</p>
+                </Right>
                 <Left img={'./cité.jpg'}>
                     <p className="md:text-2xl text-xl font-grenze text-gray-200">Cité des sables</p>
                     <p className="font-grenze md:text-lg text-gray-300">Concept créé par Zelvac en 2012 et repris par de nombreux youtubeurs et streamers depuis.</p>
