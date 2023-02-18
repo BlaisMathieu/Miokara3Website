@@ -6,7 +6,10 @@ export default function BoutiquePage({}) {
             <Helmet>
                 <title>{'Cité de Miokara'}</title>
             </Helmet>
-            <div className="hover:rotate-[360deg] transition duration-700 hover:cursor-pointer sm:mt-0 mt-[150px]">
+            <div className="pt-[55px] mb-20 w-full">
+                <embed src="https://miokara-webshop.tebex.io/" className="w-full h-screen" />
+            </div>
+            {/* <div className="hover:rotate-[360deg] transition duration-700 hover:cursor-pointer sm:mt-0 mt-[150px]">
                 <img className="sm:h-52 h-36" src='./LOGOMAXI.png'/>
             </div>
             <div className="text-center px-10 mb-20">
@@ -14,7 +17,7 @@ export default function BoutiquePage({}) {
                 <p className="text-xl text-gray-300 font-grenze">44 companions dropables avec les clés de la boutique dont 9 nouveaux companions obtenables seulement pendant cette cité</p>
                 <p className="text-xl text-gray-300 font-grenze">Tous vos cosmétiques seront conservés pour les futures évènements Miokara/MCPG</p>
                 <p className="text-lg text-gray-300 italic mt-10 font-grenze">- La totalité de l'argent récolté avec la boutique sera réinjecté dans de nouveaux évènements -</p>
-            </div>
+            </div> */}
         </div>
     )
 }

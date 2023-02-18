@@ -44,7 +44,7 @@ export default function InscriptionPage({}) {
                 hidden: { opacity: 0.5, scale: 0.8 }
                 }} className="w-[80%] h-fit text-center bg-gray-600 p-5 rounded-xl flex flex-col justify-center hover:scale-105 transition duration-500">
                     <p className="font-grenze text-gray-300 text-3xl mb-3">Seulement 120 places disponibles !!!</p>
-                    <p className="font-grenze text-green-500 text-xl mb-3">- Des places sont encore disponibles -</p>
+                    <p className="font-grenze text-yellow-300 text-xl mb-3">- Peu de places encore disponibles -</p>
                 </motion.div>
             </div>
 
